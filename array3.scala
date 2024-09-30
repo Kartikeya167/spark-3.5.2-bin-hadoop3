@@ -1,0 +1,7 @@
+val verArray=Array((1L,("SFO")),(2L,("ORD")),(3L,("DFW")))
+val edgeArray=Array(Edge(1L,2L,1800),Edge(2L,3L,800),Edge(3L,1L,1400))
+val verRDD=sc.parallelize(verArray)
+val edgeRDD=sc.parallelize(edgeArray)
+val graph=Graph(verRDD,edgeRDD)
+println("tripltes avaibale are:-")
+graph.triplets.take(graph.triplets.count.toInt).foreach(println)
