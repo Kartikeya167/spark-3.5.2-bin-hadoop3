@@ -31,3 +31,5 @@ object AnimalHabitat {
 
 // To run the main method without args in a Scala script or REPL, use:
 // AnimalHabitat.main(Array())
+
+// array
