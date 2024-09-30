@@ -6,3 +6,4 @@ object followers{
         ranks.collect.foreach(a=>println(a))
     }
 }
+// ARRAY
